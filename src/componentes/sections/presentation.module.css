@@ -1,0 +1,17 @@
+.presentation{
+    text-align: left;
+    margin-left: 15%;
+}
+
+.presentation h1{
+    font-size: 45px;
+}
+
+.presentation h4{
+    font-size: 25px;
+}
+
+.presentation a{
+    text-decoration: none;
+    color: #74FAC0;
+}

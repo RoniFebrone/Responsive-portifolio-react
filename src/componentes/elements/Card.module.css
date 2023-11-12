@@ -1,0 +1,125 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card img {
+    width: 600px;
+    max-height: 300px;
+    margin: 30px;
+    transition-duration: 0.5s;
+}
+.card img:hover {
+    transition-duration: 0.65s;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+.card h3 {
+    margin: 0px;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 780;
+}
+
+.card h4 {
+    margin: 2% 0% 0% 2%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.card section {
+    text-align: left;
+
+    background-color: rgba(1, 9, 28, 0.75);
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    height: 260px;
+}
+
+.card p {
+    margin-bottom: 5px;
+    margin-left: 2%;
+    margin-top: 8px;
+    font-size: 18px;
+    max-height: 280px;
+    height: 83px;
+
+    overflow: auto;
+    position: relative;
+}
+
+
+.card p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(1, 9, 28, 0.178));
+}
+
+
+
+.card div {
+
+    position: relative;
+    width: 100%;
+}
+
+.card complete {
+    width: 100px;
+}
+
+/*  AGUARDANDO REVISAO -- 
+
+
+.expandedCard {
+    height: auto;
+    transition: max-height 0.6s ease;
+}
+
+.section {
+    text-align: left;
+    background-color: rgba(1, 9, 28, 0.75);
+    border-radius: 20px;
+    padding: 0px 20px;
+    width: 600px;
+    max-height: 280px;
+    height: 280px;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+.expandedSection {
+    max-height: none;
+}
+
+.btnP {
+    margin-bottom: 5px;
+    margin-left: 2%;
+    margin-top: 8px;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+    height: 83px;
+    transition: height 0.8s ease  
+}
+
+.expandedCard .section {
+    max-height: none;
+}
+
+.expandedCard .btnP {
+    height: auto;
+}
+
+.divDescCard{
+
+    display: grid;
+    grid-template-columns: 70px auto;
+
+    height: auto;
+}
+ */

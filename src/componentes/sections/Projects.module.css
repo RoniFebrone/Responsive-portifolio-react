@@ -1,0 +1,16 @@
+.Projects{
+    margin-left:75px;
+}
+
+.Projects h1{
+    text-align: justify;
+    font-size: 45px;
+    margin-left: 130px ;
+}
+
+.enormeBotao {
+    width: 350px;
+    height: 60px;
+
+    font-size: 18px;
+}
