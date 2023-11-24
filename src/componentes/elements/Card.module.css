@@ -1,125 +1,208 @@
+/* Estilos básicos para dispositivos móveis */
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    width: 90%;
+    gap: 0.8em;
+
+    background-color: rgba(1, 9, 28, 0.664);
+    border-radius: 20px;
 
 }
+
 
 .card img {
-    width: 600px;
+    width: 100%;
     max-height: 300px;
-    margin: 30px;
-    transition-duration: 0.5s;
+    transition-duration: 0.45s;
 }
+
 .card img:hover {
-    transition-duration: 0.65s;
-    transform: translateY(-3px);
-    cursor: pointer;
+    transform: scale(1.1);
 }
+
 .card h3 {
-    margin: 0px;
-    margin-top: 15px;
-    font-size: 35px;
+    margin: 1%;
+    margin-top: 1rem;
+    /* Substitui 15px com uma unidade mais flexível */
+    font-size: 2.1875rem;
+    /* Substitui 35px com base no fator de escala (35/16) */
     font-weight: 780;
 }
 
 .card h4 {
-    margin: 2% 0% 0% 2%;
-    font-size: 30px;
+    margin: 1.5%;
+    font-size: 1.875rem;
     font-weight: 600;
 }
-.card section {
-    text-align: left;
 
+.card section {
+    text-align: center;
     background-color: rgba(1, 9, 28, 0.75);
     border-radius: 20px;
-    padding: 20px;
-    width: 600px;
-    height: 260px;
+    width: 100%;
+    /* Ajusta a largura para preencher o contêiner pai */
+    max-height: auto;
+    overflow: hidden;
+
+    height: auto;
+
+    margin-bottom: 0.3em;
+    padding-bottom: 0.8em;
 }
 
 .card p {
     margin-bottom: 5px;
-    margin-left: 2%;
-    margin-top: 8px;
-    font-size: 18px;
-    max-height: 280px;
-    height: 83px;
-
+    margin-left: 1%;
+    /* Substitui 2% com uma unidade mais flexível */
+    margin-top: 0.5rem;
+    /* Substitui 8px com uma unidade mais flexível */
+    font-size: 1.125rem;
+    /* Substitui 18px com base no fator de escala (18/16) */
+    max-height: 83px;
     overflow: auto;
     position: relative;
 }
 
 
-.card p::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent, rgba(1, 9, 28, 0.178));
-}
-
-
 
 .card div {
-
     position: relative;
     width: 100%;
 }
 
-.card complete {
-    width: 100px;
+
+
+
+
+
+
+/* Estilos adicionais para telas médias (exemplo: tablets em orientação retrato) */
+@media screen and (min-width: 768px) {
+    .card{
+        width:50% 50%;
+        flex-direction: row
+    }
+
+    .card section {
+        text-align: left;
+        background-color: rgba(1, 9, 28, 0.75);
+        border-radius: 20px;
+
+        max-height: auto;
+        overflow: hidden;
+
+        padding-left: 1.5em;
+
+        width: 100%;
+        height: 11em;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+        margin-top: 0.2em;
+    }
+    .card h4 {
+        font-size: 1rem;
+    }
+    .card p {
+        font-size: 0.925rem;
+        max-height: 53px;
+        overflow: auto;
+        position: relative;
+    }
+
+
+
+    .card a {
+        width: 100%;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-/*  AGUARDANDO REVISAO -- 
 
 
-.expandedCard {
-    height: auto;
-    transition: max-height 0.6s ease;
+
+
+
+
+
+/* Estilos para telas grandes  */
+@media screen and (min-width: 992px) {
+    .card{
+        width:50% 50%;
+    }
+
+    .card section {
+        text-align: left;
+        background-color: rgba(1, 9, 28, 0.75);
+        border-radius: 20px;
+
+        max-height: auto;
+        overflow: hidden;
+
+        padding-left: 1.5em;
+
+        width: 100%;
+        height: 15em;
+    }
+
+    .card h3 {
+        font-size: 1.675rem;
+    }
+    .card h4 {
+        font-size: 1.475rem;
+    }
+
+
+
+    .card a {
+        width: 100%;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-.section {
-    text-align: left;
-    background-color: rgba(1, 9, 28, 0.75);
-    border-radius: 20px;
-    padding: 0px 20px;
-    width: 600px;
-    max-height: 280px;
-    height: 280px;
-    overflow: hidden;
-    transition: max-height 0.6s ease;
+
+
+
+
+
+
+/* Estilos para telas EL */
+@media screen and (min-width: 1200px) {
+
+    .card{
+        width:50% 50%;
+    }
+
+    .card section {
+        text-align: left;
+        background-color: rgba(1, 9, 28, 0.75);
+        border-radius: 20px;
+
+        max-height: auto;
+        overflow: hidden;
+
+        padding-left: 1.5em;
+
+        width: 100%;
+    }
+    .card a {
+        width: 100%;
+    }
+    .card img {
+        width: 100%;
+    }
+
 }
-
-.expandedSection {
-    max-height: none;
-}
-
-.btnP {
-    margin-bottom: 5px;
-    margin-left: 2%;
-    margin-top: 8px;
-    font-size: 25px;
-    overflow: hidden;
-    position: relative;
-    height: 83px;
-    transition: height 0.8s ease  
-}
-
-.expandedCard .section {
-    max-height: none;
-}
-
-.expandedCard .btnP {
-    height: auto;
-}
-
-.divDescCard{
-
-    display: grid;
-    grid-template-columns: 70px auto;
-
-    height: auto;
-}
- */

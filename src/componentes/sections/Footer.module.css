@@ -1,29 +1,46 @@
-.footer{
-
-    margin-top: 100px;
-    margin-bottom: 20px;
+/* Estilos básicos para dispositivos móveis */
+.footer {
+    margin-top: 2rem; /* Substitui 100px com uma unidade mais flexível */
+    margin-bottom: 1rem; /* Substitui 20px com uma unidade mais flexível */
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.footer ul{
+.footer ul {
     display: flex;
-
     text-decoration: none;
     list-style: none;
-    
     justify-content: center;
-    margin: 25px;
+    margin: 1rem 2rem; /* Substitui 10px 80px com uma unidade mais flexível */
 }
 
-.footer a{
+.footer li {
+    margin: 0.5rem; /* Substitui 20px com uma unidade mais flexível */
+}
+
+.footer a {
     color: aliceblue !important;
 }
 
-.footer li{
-    margin-left: 15px;
+.footer p {
+    margin: 1rem 1.5rem; /* Substitui 10px 30px com uma unidade mais flexível */
+    font-size: 1.125rem; /* Substitui 18px com base no fator de escala (18/16) */
+    text-align: center;
 }
 
-.footer p{
-    margin: 25px;
+/* Estilos adicionais para telas médias (exemplo: tablets em orientação retrato) */
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer ul {
+        margin: 0; /* Remove a margem para telas médias e maiores */
+    }
+
+    .footer li {
+        margin-left: 1rem; /* Ajuste necessário para telas médias */
+    }
 }

@@ -2,10 +2,12 @@
 import styles from './Card.module.css'
 import ButtonB from '../elements/ButtonB'
 
+import React from 'react';
+
+
 
 
 function Card({ img, title, tech, description, repo, site }) {
-
     return (
         <div className={styles.card}>
 

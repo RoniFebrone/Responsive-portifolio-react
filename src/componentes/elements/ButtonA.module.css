@@ -1,18 +1,39 @@
-.btn{
-    background-color: #74FAC0;
-    border: none;
-
-    padding: 10px;
+/* Estilo básico para dispositivos móveis */
+.btn {
+    padding: 1rem; /* Substitui 10px com uma unidade mais flexível */
     border-radius: 10px;
     font-weight: bolder;
-    margin-top: 15px;
-    cursor:pointer;
+    cursor: pointer;
     transition-duration: 0.5s;
+    height: 50px;
 }
 
-.btn:hover{
+/* Estilo para o botão */
+.btn.only-btn {
+    background-color: #74FAC0;
+    border: none;
+    margin-top: 0.9375rem; /* Substitui 15px com uma unidade mais flexível */
+}
+
+/* Efeito hover para o botão */
+.btn.only-btn:hover {
     color: white;
     background-color: #010B28;
     transition-duration: 0.65s;
     transform: translateY(-6px);
+}
+
+/* Estilos adicionais para telas médias (exemplo: tablets em orientação retrato) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Estilos para telas grandes (exemplo: tablets em orientação paisagem) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Estilos para telas extra grandes (exemplo: monitores grandes) */
+@media screen and (min-width: 1200px) {
+
 }

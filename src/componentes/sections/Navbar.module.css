@@ -1,21 +1,67 @@
-.navbar{
+/* Estilos básicos para dispositivos móveis */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 1em;
-
-}
-
-.navbar ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.navbar li{
-    margin: 10px;
     
 }
 
-.navbar a{
-    color: white !important    
+.list1, .list2 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1em;
+}
+
+.list1{
+    justify-content: space-around;
+}
+
+.list2{
+    gap: 2em;
+}
+
+
+.navbar li {
+    margin: 0.5rem; /* Substitui 10px com uma unidade mais flexível */
+}
+
+.navbar a {
+    color: white !important;
+    cursor: pointer;
+}
+
+/* Estilos para telas pequenas (exemplo: smartphones em orientação retrato) */
+@media screen and (min-width: 576px) {
+
+}
+
+/* Estilos para telas médias (exemplo: tablets em orientação retrato) */
+@media screen and (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list1, .list2 {
+        flex-direction: row;
+    }
+}
+
+/* Estilos para telas grandes (exemplo: tablets em orientação paisagem) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Estilos para telas extra grandes (exemplo: monitores grandes) */
+@media screen and (min-width: 1200px) {
+
 }

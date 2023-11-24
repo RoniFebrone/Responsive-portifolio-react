@@ -8,22 +8,38 @@ import CCXP from '../../Image/imgProjects/CCXP.svg'
 import Byecar from '../../Image/imgProjects/Byecar.svg'
 import Deliveryeasy from '../../Image/imgProjects/Deliveryeasy.svg'
 
-// import React from '../../Image/imgProjects/React.svg'
+import React from '../../Image/imgProjects/React.svg'
 
 function Projects() {
     return (
-        <div className={styles.Projects}>
+        <div className={styles.Projects} id="Projects">
             <h1> Projetos </h1>
 
-            {/* <Card
+            <Card  className ={styles.Cards}
                 img={React}
                 title ="PORTFÓLIO"
                 tech ="React, HTML, CSS, JavaScript"
                 description ="Meu portfólio, que estão vendo agora!! Meu primeiro projeto em React, que gostei muito de fazer, tive alguns desafios que eu mesmo propus, que me fizeram aprender ainda mais sobre a linguagem, durante o processo."
-                repo ="" 
-                site =""
-            /> */}
-            <Card
+                repo ="https://github.com/RoniFebrone/Portfolio-react.git" 
+                site ="portifolio-ewfzik0rg-ronifebrone.vercel.app"
+            />
+            <Card  className ={styles.Cards}
+                img={Byecar}
+                title="Lançamento produto - Byecar"
+                tech="HTML, CSS, JavaScript"
+                description="Este foi um desafio Front-End que fiz, em que além do treino em lógica de programação, html, css e JS, também foi exelente, pois treinamos tambem o uso do figma, foram feitos benchmarks, entre outras demandas que passei para a conclusao do projeto."
+                repo="https://github.com/RoniFebrone/Figma-Lp-comp.git"
+                site="https://lp-byecar.netlify.app"
+            />
+            <Card  className ={styles.Cards}
+                img={Deliveryeasy}
+                title="APLICATIVO DE DELIVERY (UI/UX)"
+                tech="Figma"
+                description="Neste projeto, fui desafiado a criar um aplicativo, com poucas informações, onde precisei criar um benchmark, traçar um plano, e criar um app, em que é possivel realizar uma compra através do protótipo, bem rico em detalhes."
+                repo="https://github.com/RoniFebrone/UI-e-UX-Training.git"
+                site="https://www.figma.com/proto/zuxZprLMP5mM5oxy0b2Ty6/DeliveryEasy?type=design&node-id=142-9639&t=aRtjZ39ncrd9K8aU-1&scaling=min-zoom&page-id=142%3A4347&starting-point-node-id=142%3A12557&mode=design"
+            />
+            <Card  className ={styles.Cards}
                 img={CCXP}
                 title="LP Lançamento - CCXP"
                 tech="HTML, CSS, JavaScript"
@@ -31,26 +47,9 @@ function Projects() {
                 repo="https://github.com/RoniFebrone/LP-Lancamento-CCXP.git"
                 site="https://lp-lancamento-ccxp.vercel.app"
             />
-            <Card
-                img={Deliveryeasy}
-                title="APLICATIVO DE DELIVERY (UI/UX)"
-                tech="Figma"
-                description="Neste projeto, fui desafiado a criar um aplicativo, com poucas informações, onde precisei criar um benchmark, traçar um plano, e criar um app, em que é possivel realizar uma compra através do protótipo, bem rico em detalhes.()"
-                repo="https://github.com/RoniFebrone/UI-e-UX-Training.git"
-                site="https://www.figma.com/proto/zuxZprLMP5mM5oxy0b2Ty6/DeliveryEasy?type=design&node-id=142-9639&t=aRtjZ39ncrd9K8aU-1&scaling=min-zoom&page-id=142%3A4347&starting-point-node-id=142%3A12557&mode=design"
-            />
-            <Card
-                img={Byecar}
-                title="LP Lançamento - CCXP"
-                tech="HTML, CSS, JavaScript"
-                description="Este foi outro desafio Front-End que fiz, que para alem do treino de lógica de programação, html, css e JS, tamb[em foi exelente, pois treinamos tambem o uso do figma, foi feito benchmarks, entre outras demandas que passei para a conclusao."
-                repo="https://github.com/RoniFebrone/Figma-Lp-comp.git"
-                site="https://lp-byecar.netlify.app"
-            />
-            <br/>
             <div>
                 {/* Adicione a classe 'enormeBotao' para estilizar este botão especificamente */}
-                <ButtonB text='Acesse meu repositório completo!!!' link={'https://github.com/RoniFebrone?tab=repositories'} customClass={styles.enormeBotao} />
+                <ButtonB text='Acesse meu repositório completo!!!' link={'https://github.com/RoniFebrone?tab=repositories'} customClass={styles.btnPrj} />
             </div>
 
 

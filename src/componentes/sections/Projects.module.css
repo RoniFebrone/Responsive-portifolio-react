@@ -1,16 +1,89 @@
-.Projects{
-    margin-left:75px;
+/* Estilos básicos para dispositivos móveis */
+.Projects {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 3.5em;
+
+    margin-top: 3em;
+
 }
 
-.Projects h1{
+.Projects h1 {
     text-align: justify;
-    font-size: 45px;
-    margin-left: 130px ;
+    font-size: 2.8125rem;
+
+    margin: 0;
 }
 
-.enormeBotao {
-    width: 350px;
-    height: 60px;
+.btnPrj {
+    width: 21.875rem;
+    height: 3.75rem;
+    font-size: 1.125rem;
+}
 
-    font-size: 18px;
+/* Estilos para telas pequenas (exemplo: smartphones em orientação retrato) */
+@media screen and (min-width: 576px) {
+    .Projects {
+        margin:0;
+    }
+
+    .Projects h1 {
+        font-size: 2.5rem; /* Ajuste necessário para telas pequenas */
+        
+    }
+
+    .btnPrj {
+        width: 18.75rem; /* Ajuste necessário para telas pequenas */
+        height: 3rem; /* Ajuste necessário para telas pequenas */
+        font-size: 1rem; /* Ajuste necessário para telas pequenas */
+    }
+}
+
+/* Estilos para telas médias (exemplo: tablets em orientação retrato) */
+@media screen and (min-width: 768px) {
+    .Projects {
+        margin:0;
+    }
+
+    .Projects h1 {
+        font-size: 2.75rem; /* Ajuste necessário para telas médias */
+    }
+
+    .btnPrj {
+        width: 20rem; /* Ajuste necessário para telas médias */
+    }
+}
+
+/* Estilos para telas grandes (exemplo: tablets em orientação paisagem) */
+@media screen and (min-width: 992px) {
+    .Projects {
+        margin:0;
+    }
+
+    .Projects h1 {
+        font-size: 3rem; /* Ajuste necessário para telas grandes */
+    }
+
+    .btnPrj {
+        width: 22.5rem; /* Ajuste necessário para telas grandes */
+    }
+}
+
+/* Estilos para telas extra grandes (exemplo: monitores grandes) */
+@media screen and (min-width: 1200px) {
+    .Projects {
+        margin: 0;
+        margin-top: 3em;
+    }
+
+    .Projects h1 {
+        font-size: 3.5rem; /* Ajuste necessário para telas extra grandes */
+        margin-bottom: 0.7em;
+    }
+
+    .btnPrj {
+        width: 25rem; /* Ajuste necessário para telas extra grandes */
+    }
 }
