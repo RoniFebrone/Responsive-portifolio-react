@@ -30,14 +30,14 @@
     }
 
     .Projects h1 {
-        font-size: 2.5rem; /* Ajuste necessário para telas pequenas */
+        font-size: 2.5rem; 
         
     }
 
     .btnPrj {
-        width: 18.75rem; /* Ajuste necessário para telas pequenas */
-        height: 3rem; /* Ajuste necessário para telas pequenas */
-        font-size: 1rem; /* Ajuste necessário para telas pequenas */
+        width: 18.75rem; 
+        height: 3rem; 
+        font-size: 1rem; 
     }
 }
 
@@ -48,11 +48,11 @@
     }
 
     .Projects h1 {
-        font-size: 2.75rem; /* Ajuste necessário para telas médias */
+        font-size: 2.75rem; 
     }
 
     .btnPrj {
-        width: 20rem; /* Ajuste necessário para telas médias */
+        width: 20rem;
     }
 }
 
@@ -63,11 +63,11 @@
     }
 
     .Projects h1 {
-        font-size: 3rem; /* Ajuste necessário para telas grandes */
+        font-size: 3rem; 
     }
 
     .btnPrj {
-        width: 22.5rem; /* Ajuste necessário para telas grandes */
+        width: 22.5rem; 
     }
 }
 
@@ -79,11 +79,11 @@
     }
 
     .Projects h1 {
-        font-size: 3.5rem; /* Ajuste necessário para telas extra grandes */
+        font-size: 3.5rem; 
         margin-bottom: 0.7em;
     }
 
     .btnPrj {
-        width: 25rem; /* Ajuste necessário para telas extra grandes */
+        width: 25rem; 
     }
 }
