@@ -22,9 +22,6 @@
 
 
 
-
-
-
 /* Substitui 25px com base no fator de escala (n/16) */
 
 .skills img {
@@ -140,20 +137,23 @@
 /* Estilos para telas extra grandes (exemplo: monitores grandes) */
 @media screen and (min-width: 1200px) {
     .skills {
-        margin: 5rem; /* Ajuste necessário para telas extra grandes */
+        margin: 2rem 5rem; 
+        padding: 0;
+        padding-bottom: 1.7rem;
     }
 
     .skills img {
-        width: 10.75rem; /* Ajuste necessário para telas extra grandes */
-        height: 10.75rem; /* Ajuste necessário para telas extra grandes */
-        margin: 2rem; /* Ajuste necessário para telas extra grandes */
+        width: 8.75rem; 
+        height: 8.75rem; 
+        margin: 2rem; 
+
     }
 
     .skills h1 {
-        font-size: 3.5rem; /* Ajuste necessário para telas extra grandes */
+        font-size: 3rem; 
     }
 
     .skills p {
-        font-size: 1.5rem; /* Ajuste necessário para telas extra grandes */
+        font-size: 1.3rem; 
     }
 }

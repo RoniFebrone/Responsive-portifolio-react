@@ -30,7 +30,7 @@ ul{
 
 
 .navbar li {
-    margin: 0.5rem; /* Substitui 10px com uma unidade mais flexível */
+    margin: 0.5rem; 
 }
 
 .navbar a {
@@ -64,4 +64,30 @@ ul{
 /* Estilos para telas extra grandes (exemplo: monitores grandes) */
 @media screen and (min-width: 1200px) {
 
+.navbar{
+    margin-bottom: 2.5rem;
+}
+
+    .list1, .list2{  
+        
+        display: flex;
+
+        gap: 0;
+        padding: 0;
+        margin: 0;
+
+        padding: 1rem 3rem;
+
+    }
+}
+
+.list1 li{
+    padding: 0rem 0.6rem;
+}
+
+.list2{
+    flex-direction: row-reverse;
+}
+.list2 li{
+    padding: 0rem 0.6rem;
 }
